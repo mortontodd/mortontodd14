@@ -1,0 +1,112 @@
+{
+  "plays": {
+    "run": {
+      "min": -2,
+      "max": 8,
+      "turnoverChance": 0.02
+    },
+    "qbSneak": {
+      "min": 0,
+      "max": 3,
+      "turnoverChance": 0.01
+    },
+    "shortPass": {
+      "max": 18,
+      "completionChance": 0.75,
+      "turnoverChance": 0.05
+    },
+    "deepBall": {
+      "max": 45,
+      "completionChance": 0.45,
+      "turnoverChance": 0.12
+    }
+  },
+
+  "receivers": {
+    "short": [
+      {
+        "name": "Slot WR",
+        "route": "Slant",
+        "yards": 6
+      },
+      {
+        "name": "TE",
+        "route": "Flat",
+        "yards": 5
+      },
+      {
+        "name": "WR1",
+        "route": "Out Route",
+        "yards": 8
+      }
+    ],
+
+    "deep": [
+      {
+        "name": "WR1",
+        "route": "Go Route",
+        "yards": 25
+      },
+      {
+        "name": "WR2",
+        "route": "Post",
+        "yards": 20
+      },
+      {
+        "name": "Slot WR",
+        "route": "Corner",
+        "yards": 18
+      }
+    ]
+  },
+
+  "defense": {
+    "coverage": [
+      {
+        "name": "Open",
+        "class": "good",
+        "completionModifier": 0.15,
+        "turnoverModifier": -0.02
+      },
+      {
+        "name": "Tight Coverage",
+        "class": "neutral",
+        "completionModifier": -0.10,
+        "turnoverModifier": 0.02
+      },
+      {
+        "name": "Double Covered",
+        "class": "bad",
+        "completionModifier": -0.25,
+        "turnoverModifier": 0.06
+      }
+    ],
+
+    "runPressure": [
+      {
+        "name": "Open Lane",
+        "class": "good",
+        "yardModifier": 4,
+        "turnoverModifier": 0
+      },
+      {
+        "name": "Contained",
+        "class": "neutral",
+        "yardModifier": 0,
+        "turnoverModifier": 0
+      },
+      {
+        "name": "Blitz",
+        "class": "bad",
+        "yardModifier": -3,
+        "turnoverModifier": 0.02
+      },
+      {
+        "name": "Stacked Box",
+        "class": "bad",
+        "yardModifier": -5,
+        "turnoverModifier": 0.03
+      }
+    ]
+  }
+}
